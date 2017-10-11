@@ -2,10 +2,10 @@
 
   <label for="firstName">First Name:</label>
   <input type="text" name="first_name" id="firstName" value="<%= @pizza.first_name%>"/>
-
+  <br>
   <label for="lastName">Last Name:</label>
   <input type="text" name="last_name" id="lastName" value="<%= @pizza.last_name %>"/>
-
+  <br>
   <label for="pizza_select">Select a pizza:</label>
   <select name="topping" id="pizza_select">
     <% Pizza.toppings.each do |topping| %>
@@ -13,10 +13,10 @@
       <%= "<option value='#{topping}' #{selected} >#{topping}</option>" %>
     <% end %>
   </select>
-
+  <br>
   <label for="quantity">Quantity:</label>
   <input type="number" name="quantity" id="quantity" value="<%= @pizza.quantity %>"/>
-
+  <br>
   <input type="submit" value="Submit">
 
 </form>

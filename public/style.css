@@ -1,3 +1,15 @@
+body {
+  background-color: #EEF0EB;
+  margin: 0;
+  font-family: 'Molengo', sans-serif;
+}
+
+h1 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
 p {
   align-items: center;
   display: flex;
@@ -6,5 +18,41 @@ p {
 
 form {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  margin: auto;
+  width: 30%;
+}
+
+ul {
+  background-color: #153243;
+  list-style-type: none;
+  margin: 0 0 20px 0;
+  padding: 10px;
+}
+
+li {
+  display: inline;
+  padding: 8px;
+}
+
+li:hover {
+  background-color: #284B63;
+}
+
+a {
+  color: #284B63;
+  font-family: 'Molengo', sans-serif;
+  text-decoration: none;
+}
+
+ul li a {
+  color: #EEF0EB;
+  font-family: 'Lekton', sans-serif;
+  text-decoration: none;
+}
+
+input {
+  background-color: #B4B8AB;
+  font-family: 'Lekton', sans-serif;
 }
